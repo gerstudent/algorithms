@@ -1,4 +1,5 @@
 <h1 align="center">AlgoRhythms</h1>
+
 ## Description
 
 This repository is a summary of lectures from various programming courses and was created in order to systematize the material. 
