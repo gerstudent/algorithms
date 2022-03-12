@@ -10,7 +10,7 @@ The repository was written by a student and may contain some flaws.
 I will be glad if you suggest a more efficient implementation of the algorithm 
 or point out some errors in the code. 
 
-## About Me
+# About Me
 
 I am Herman Kichenin, computer science student from Canada.                   
 In my free time I do sports programming and study algorithms.   

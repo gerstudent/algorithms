@@ -3,4 +3,4 @@ project (AlgoRhythms)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(AlgoRhythms main.cpp Mathematics/Euclidean_algorithm.cpp)
+add_executable(AlgoRhythms Mathematics/Euclidean_algorithm.cpp Mathematics/Ext_Euclidean_algo.cpp)
