@@ -1,6 +1,5 @@
 #include "iostream"
 #include "bits/stdc++.h"
-
 using namespace std;
 
 void bubblesort(int a[], int n){
