@@ -20,7 +20,7 @@ void print(int a[], int size){
 }
 
 int main(){
-    int a[] = { 9, 5, 4, 3, 8, 0, 2}; // Example array
+    int a[] = { 9, 5, 4, 3, 7, 0, 2}; // Example array
     int n = sizeof(a) / sizeof(a[0]);
     bubblesort(a, n);
     print(a, n);
