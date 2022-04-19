@@ -17,7 +17,7 @@ or point out some errors in the code.
 
 # About Me
 
-I am Herman Kichenin, computer science student from Canada.                   
+I am Herman, computer science student from Kazan.                   
 In my free time I do sports programming and study algorithms.   
 I love to explore and learn new algorithms and programming techniques.      
 
