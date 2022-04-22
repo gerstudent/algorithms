@@ -4,7 +4,7 @@ using namespace std;
 
 void bubblesort(int a[], int n){
     bool swapflag;
-    for (int i = 0; (i < n - 1) && (swapflag) ; ++i) {
+    for (int i = 0; i < n - 1; ++i) {
         swapflag = false;
         for (int j = 0; j < n - i - 1; ++j) {
             if (a[j] > a[j + 1]) {
@@ -12,10 +12,12 @@ void bubblesort(int a[], int n){
                 swap(a[j], a[j + 1]);
             }
         }
+        if (!swapflag)
+            break;
     }
 }
 
-void print(int *a, int n){
+void print(int a[], int n){
     for (int i = 0; i < n; ++i) {
         cout << a[i] << " ";
     }
