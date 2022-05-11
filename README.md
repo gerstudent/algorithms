@@ -20,4 +20,4 @@ or point out some errors in the code.
 I am Herman, computer science student from Kazan.                   
 In my free time I do sports programming and study algorithms.      
 
-## Contributions are welcome
+# Contributions are welcome
