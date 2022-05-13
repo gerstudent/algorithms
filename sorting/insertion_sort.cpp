@@ -1,13 +1,7 @@
 #include <bits/stdc++.h>
 #include <iostream>
-
 using namespace std;
 
-void inputarr(int arr[], int n){
-    for (int i = 0; i < n; ++i){
-        cin >> arr[i];
-    }
-}
 void insertionSort(int arr[], int n){
     int temp, i, j;
     for (i = 1; i < n; ++i) {
@@ -18,6 +12,12 @@ void insertionSort(int arr[], int n){
             j -= 1;
         }
         arr[j + 1] = temp;
+    }
+}
+
+void inputarr(int arr[], int n){
+    for (int i = 0; i < n; ++i){
+        cin >> arr[i];
     }
 }
 
