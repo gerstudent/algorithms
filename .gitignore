@@ -1,2 +1,5 @@
 /.idea/
 /cmake-build-debug/
+CMakeLists.txt
+test.cpp
+test2.cpp
