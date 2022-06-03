@@ -2,7 +2,7 @@
 #include "bits/stdc++.h"
 using namespace std;
 
-void bubblesort(int a[], int n){
+void bubbleSort(int a[], int n) {
     bool swapflag;
     for (int i = 0; i < n - 1; ++i) {
         swapflag = false;
@@ -17,21 +17,21 @@ void bubblesort(int a[], int n){
     }
 }
 
-void print(int a[], int n){
+void printArr(int a[], int n) {
     for (int i = 0; i < n; ++i) {
         cout << a[i] << " ";
     }
     cout << endl;
 }
 
-int main(){
-    int n; // number of element
+int main() {
+    int n; // number of elements
     cin >> n;
     int a[n];
     for(int i = 0; i < n; i++) {
         cin >> a[i];
     }
-    bubblesort(a, n);
-    print(a, n);
+    bubbleSort(a, n);
+    printArr(a, n);
     return 0;
 }

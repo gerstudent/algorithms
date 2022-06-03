@@ -3,9 +3,9 @@
 using namespace std;
 
 // Function for sorting an array
-void selectionSort(int arr[], int n){
+void selectionSort(int arr[], int n) {
     int min;
-    for (int i = 0; i < n - 1; i++){
+    for (int i = 0; i < n - 1; i++) {
         min = i;
         for (int j = i + 1; j < n; j++) {
             if (arr[j] < arr[min]) {
@@ -17,24 +17,25 @@ void selectionSort(int arr[], int n){
 }
 
 // Function for entering an array
-void inputarr(int arr[], int n){
-    for (int i = 0; i < n; ++i){
+void inputArr(int arr[], int n) {
+    for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }
 }
 
 // Function for printing an array
-void printArray(int arr[], int n){
+void printArr(int arr[], int n) {
     for (int i = 0; i < n; i++)
         cout << arr[i] << " ";
     cout << endl;
 }
 
 int main(){
-    int n; cin >> n;
+    int n;
+    cin >> n; // number of elements
     int arr[n];
-    inputarr(arr, n);
+    inputArr(arr, n);
     selectionSort(arr, n);
-    printArray(arr, n);
+    printArr(arr, n);
     return 0;
 }
