@@ -17,7 +17,7 @@ written in C++, but Python and Java implementation examples will also be added a
 I am Herman, computer science student from Kazan.                   
 In my free time I do sports programming and study algorithms.      
 
-### Contributions are welcome
+## Contributions are welcome
 
 The repository was written by a student and may contain some flaws. 
 I will be glad if you suggest a more efficient implementation of the algorithm 
