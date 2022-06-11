@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-vector<int> fdividers(int x) {
+vector<int> findDividers(int x) {
     vector<int> dividers;
     for (int i = 1; i <= sqrt(x); i++) {
         if (x % i == 0) {
@@ -18,10 +18,10 @@ vector<int> fdividers(int x) {
 
 int main() {
     int n; cin >> n;
-    vector<int> divs = fdividers(n);
+    vector<int> divs = findDividers(n);
     sort(divs.begin(), divs.end());
     cout << divs.size() << endl;
-    for (int div : divs){
+    for (int div : divs) {
         cout << div << " ";
     }
     return 0;

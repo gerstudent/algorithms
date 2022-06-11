@@ -2,7 +2,6 @@
 #include <iostream>
 using namespace std;
 
-// Function for sorting an array
 void selectionSort(int arr[], int n) {
     int min;
     for (int i = 0; i < n - 1; i++) {
@@ -16,26 +15,23 @@ void selectionSort(int arr[], int n) {
     }
 }
 
-// Function for entering an array
-void inputArr(int arr[], int n) {
+void inputArray(int arr[], int n) {
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }
 }
 
-// Function for printing an array
-void printArr(int arr[], int n) {
-    for (int i = 0; i < n; i++)
+void printArray(int arr[], int n) {
+    for (int i = 0; i < n; ++i) {
         cout << arr[i] << " ";
-    cout << endl;
+    }
 }
 
-int main(){
-    int n;
-    cin >> n; // number of elements
-    int arr[n];
-    inputArr(arr, n);
-    selectionSort(arr, n);
-    printArr(arr, n);
+int main() {
+    int n; cin >> n;
+    int a[n];
+    inputArray(a, n);
+    selectionSort(a, n);
+    printArray(a, n);
     return 0;
 }

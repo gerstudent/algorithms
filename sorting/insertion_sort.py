@@ -7,7 +7,7 @@ def insertionSort(arr):
             j -= 1
         arr[j + 1] = temp
 
-arr = list(map(int, input().split()))
-insertionSort(arr)
+a = list(map(int, input().split()))
+insertionSort(a)
 for k in range(len(arr)):
-    print(arr[k], end=" ")
+    print(a[k], end=" ")

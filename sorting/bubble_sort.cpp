@@ -2,14 +2,14 @@
 #include "bits/stdc++.h"
 using namespace std;
 
-void bubbleSort(int a[], int n) {
+void bubbleSort(int arr[], int n) {
     bool swapflag;
     for (int i = 0; i < n - 1; ++i) {
         swapflag = false;
         for (int j = 0; j < n - i - 1; ++j) {
-            if (a[j] > a[j + 1]) {
+            if (arr[j] > arr[j + 1]) {
                 swapflag = true;
-                swap(a[j], a[j + 1]);
+                swap(arr[j], arr[j + 1]);
             }
         }
         if (!swapflag)
@@ -17,21 +17,23 @@ void bubbleSort(int a[], int n) {
     }
 }
 
-void printArr(int a[], int n) {
+void inputArray(int arr[], int n) {
     for (int i = 0; i < n; ++i) {
-        cout << a[i] << " ";
+        cin >> arr[i];
     }
-    cout << endl;
+}
+
+void printArray(int arr[], int n) {
+    for (int i = 0; i < n; ++i) {
+        cout << arr[i] << " ";
+    }
 }
 
 int main() {
-    int n; // number of elements
-    cin >> n;
+    int n; cin >> n;
     int a[n];
-    for(int i = 0; i < n; i++) {
-        cin >> a[i];
-    }
+    inputArray(a, n);
     bubbleSort(a, n);
-    printArr(a, n);
+    printArray(a, n);
     return 0;
 }

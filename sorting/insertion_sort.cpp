@@ -15,24 +15,23 @@ void insertionSort(int arr[], int n) {
     }
 }
 
-void inputArr(int arr[], int n) {
+void inputArray(int arr[], int n) {
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }
 }
 
-void printArr(int arr[], int n) {
+void printArray(int arr[], int n) {
     for (int i = 0; i < n; ++i) {
         cout << arr[i] << " ";
     }
 }
 
 int main() {
-    int n;
-    cin >> n; // number of elements
-    int arr[n];
-    inputArr(arr, n);
-    insertionSort(arr, n);
-    printArr(arr, n);
+    int n; cin >> n;
+    int a[n];
+    inputArray(a, n);
+    insertionSort(a, n);
+    printArray(a, n);
     return 0;
 }

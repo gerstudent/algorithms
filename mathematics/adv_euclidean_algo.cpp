@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 int advancedGcd(int a, int b, int &x, int &y) {
     if (a == 0) {
@@ -14,8 +15,8 @@ int advancedGcd(int a, int b, int &x, int &y) {
 
 int main() {
     int a, b, x, y;
-    std::cin >> a >> b >> x >> y;
-    std::cout << advancedGcd(a, b, x, y);
+    cin >> a >> b >> x >> y;
+    cout << advancedGcd(a, b, x, y);
     return 0;
 }
 
