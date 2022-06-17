@@ -3,9 +3,9 @@
 #include <cmath>
 using namespace std;
 
-vector<int> findDividers(int x) {
-    vector<int> dividers;
-    for (int i = 1; i <= sqrt(x); i++) {
+vector<unsigned> findDividers(unsigned x) {
+    vector<unsigned> dividers;
+    for (unsigned i = 1; i <= sqrt(x); i++) {
         if (x % i == 0) {
             dividers.push_back(i);
             if (i * i != x) {
@@ -18,11 +18,11 @@ vector<int> findDividers(int x) {
 
 int main() {
     int n; cin >> n;
-    vector<int> divs = findDividers(n);
+    vector<unsigned> divs = findDividers(n);
     sort(divs.begin(), divs.end());
     cout << divs.size() << endl;
-    for (int div : divs) {
-        cout << div << " ";
+    for (unsigned div : divs) {
+        cout << div << ' ';
     }
     return 0;
 }
