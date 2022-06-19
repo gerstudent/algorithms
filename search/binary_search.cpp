@@ -14,8 +14,7 @@ int binarySearch(const int arr[], int l, int r, int x) {
         }
         if (arr[m] > x) {
             r = m - 1;
-        }
-        else {
+        } else {
             l = m + 1;
         }
     }
@@ -29,13 +28,13 @@ void inputArray(int arr[], int n) {
 }
 
 int main() {
-    int n; cin >> n;
+    int n; 
+    cin >> n;
     int a[n];
     inputArray(a, n);
-    int x; cin >> x;
-    int ans = binarySearch(a, 0, n, x);
-    if (ans == -1) cout << "Element does not exist in the array";
-    else cout << "x index: " << ans;
+    int x; 
+    cin >> x;
+    cout << binarySearch(a, 0, n, x) << '\n';
     return 0;
 }
 
