@@ -3,7 +3,7 @@ using namespace std;
 
 unsigned long long fib(unsigned long long n) {
   unsigned long long a = 0, b = 1, i;
-  for (i = 0; i < n; ++i) {
+  for (i = 0; i < n; i++) {
     a = a + b;
     b = a - b;
   }

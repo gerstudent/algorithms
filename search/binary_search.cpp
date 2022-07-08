@@ -26,7 +26,7 @@ int main() {
   int n, x;
   cin >> n >> x;
   int arr[n];
-  for (int i = 0; i < n; ++i) {
+  for (int i = 0; i < n; i++) {
     cin >> arr[i];
   }
   int res = binarySearch(arr, 0, n - 1, x);

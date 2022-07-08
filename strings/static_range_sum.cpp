@@ -5,7 +5,7 @@ using ll = long long;
 
 vector<ll> staticRangeSum(const vector<ll>& vec) {
   vector<ll> ans(vec.size() + 1);
-  for (size_t i = 0; i < vec.size(); ++i) {
+  for (size_t i = 0; i < vec.size(); i++) {
     ans[i + 1] = ans[i] + vec[i];
   }
   return ans;
@@ -18,7 +18,7 @@ int main() {
   int n, q;
   cin >> n >> q;
   vector<ll> a(n);
-  for (size_t i = 0; i < a.size(); ++i) {
+  for (size_t i = 0; i < a.size(); i++) {
     cin >> a[i];
   }
   vector<ll> res = staticRangeSum(a);

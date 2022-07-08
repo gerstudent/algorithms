@@ -4,7 +4,7 @@ using namespace std;
 vector<int> prefFun(string str) {
   int len = str.length();
   vector<int> pf(len, 0);
-  for (int i = 1; i < len; ++i) {
+  for (int i = 1; i < len; i++) {
     int step = pf[i - 1];
     while (step > 0 && str[i] != str[step]) {
       step = pf[step - 1];
@@ -23,7 +23,7 @@ int main() {
   string str;
   cin >> str;
   vector<int> ans = prefFun(str);
-  for (size_t i = 0; i < ans.size(); ++i) {
+  for (size_t i = 0; i < ans.size(); i++) {
     cout << ans[i] << '\n';
   }
   return 0;

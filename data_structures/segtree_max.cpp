@@ -61,7 +61,7 @@ int main() {
   int k;
   cin >> n;
   int* a = new int[n];
-  for (int* i = a; i != a + n; ++i) {
+  for (int* i = a; i != a + n; i++) {
     cin >> *i;
   }
 

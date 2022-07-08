@@ -14,24 +14,16 @@ void selectionSort(int arr[], int n) {
   }
 }
 
-void inputArray(int arr[], int n) {
-  for (int i = 0; i < n; ++i) {
-    cin >> arr[i];
-  }
-}
-
-void printArray(int arr[], int n) {
-  for (int i = 0; i < n; ++i) {
-    cout << arr[i] << " ";
-  }
-}
-
 int main() {
   int n;
   cin >> n;
-  int a[n];
-  inputArray(a, n);
-  selectionSort(a, n);
-  printArray(a, n);
+  int arr[n];
+  for (int i = 0; i < n; i++) {
+    cin >> arr[i];
+  }
+  selectionSort(arr, n);
+  for (int i = 0; i < n; i++) {
+    cout << arr[i] << ' ';
+  }
   return 0;
 }

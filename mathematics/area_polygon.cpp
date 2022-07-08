@@ -19,7 +19,7 @@ int main() {
   int n;
   cin >> n;
   double x[n], y[n];
-  for (int i = 0; i < n; ++i) {
+  for (int i = 0; i < n; i++) {
     cin >> x[i] >> y[i];
   }
   cout << fixed << areaPolygon(x, y, n);
