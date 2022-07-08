@@ -18,6 +18,9 @@ void bubbleSort(int arr[], int n) {
 }
 
 int main() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(nullptr);
+
   int n;
   cin >> n;
   int arr[n];
@@ -26,7 +29,7 @@ int main() {
   }
   bubbleSort(arr, n);
   for (int i = 0; i < n; ++i) {
-    cout << arr[i] << " ";
+    cout << arr[i] << ' ';
   }
   return 0;
 }

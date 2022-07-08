@@ -1,5 +1,4 @@
-#include <cmath>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 vector<unsigned> findDividers(unsigned x) {
