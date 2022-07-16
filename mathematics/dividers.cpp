@@ -1,27 +1,31 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<unsigned> findDividers(unsigned x) {
-  vector<unsigned> dividers;
-  for (unsigned i = 1; i <= sqrt(x); i++) {
+using ull = unsigned long long;
+
+vector<ull> findDividers(ull x) {
+  vector<ull> divs;
+  for (ull i = 1; i <= sqrt(x); i++) {
     if (x % i == 0) {
-      dividers.push_back(i);
+      divs.push_back(i);
       if (i * i != x) {
-        dividers.push_back(x / i);
+        divs.push_back(x / i);
       }
     }
   }
-  return dividers;
+  return divs;
 }
 
 int main() {
   int n;
   cin >> n;
-  vector<unsigned> divs = findDividers(n);
+
+  vector<ull> divs = findDividers(n);
   sort(divs.begin(), divs.end());
-  cout << divs.size() << endl;
-  for (unsigned div : divs) {
-    cout << div << ' ';
+
+  cout << divs.size() << '\n';
+  for (ull i: divs) {
+    cout << i << ' ';
   }
   return 0;
 }

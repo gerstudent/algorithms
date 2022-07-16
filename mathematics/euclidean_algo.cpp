@@ -1,16 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Finding the greatest common divisor
 int gcd(int a, int b) {
-  while (b > 0) {
-    a %= b;
-    swap(a, b);
-  }
-  return a;
+  return b ? gcd(b, a % b) : a;
 }
 
-// Finding the least common multiple
 int lcm(int a, int b) {
   return a / gcd(a, b) * b; 
 }
@@ -18,6 +12,6 @@ int lcm(int a, int b) {
 int main() {
   int a, b;
   cin >> a >> b;
-  cout << gcd(a, b) << " " << lcm(a, b);
+  cout << "gcd: " << gcd(a, b) << ' ' << "lcm " << lcm(a, b);
   return 0;
 }
