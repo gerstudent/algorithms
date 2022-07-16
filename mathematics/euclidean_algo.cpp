@@ -12,6 +12,6 @@ int lcm(int a, int b) {
 int main() {
   int a, b;
   cin >> a >> b;
-  cout << "gcd: " << gcd(a, b) << ' ' << "lcm " << lcm(a, b);
+  cout << "gcd: " << gcd(a, b) << ' ' << "lcm: " << lcm(a, b);
   return 0;
 }
