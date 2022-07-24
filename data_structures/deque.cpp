@@ -5,6 +5,7 @@ const int MAXV = 1000;
 
 struct Deque {
   int arr[MAXV], size, head, tail;
+
   Deque(int sz) {
     size = sz;
     head = size - 1;
