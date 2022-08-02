@@ -10,7 +10,7 @@ int josephus(int n, int k) {
 
 int main() {
   int n, k;
-  std::cin >> n >> k;
-  std::cout << josephus(n, k);
+  cin >> n >> k;
+  cout << josephus(n, k);
   return 0;
 }

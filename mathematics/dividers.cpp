@@ -24,7 +24,7 @@ int main() {
   sort(divs.begin(), divs.end());
 
   cout << divs.size() << '\n';
-  for (ull i: divs) {
+  for (ull i : divs) {
     cout << i << ' ';
   }
   return 0;
