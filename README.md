@@ -1,4 +1,4 @@
-# AlgoRhythms
+# Algorithms library
 
 ## Description
 
@@ -13,6 +13,6 @@ This repository is a summary of lectures from various programming courses and wa
 
 I am Herman, computer science student from Kazan. In my free time I do sports programming and study algorithms.      
 
-## Contributions are welcome
+## Contributions are welcome!
 
 The repository was written by a student and may contain some flaws. I will be glad if you suggest a more efficient implementation of the algorithm or point out some errors in the code.
