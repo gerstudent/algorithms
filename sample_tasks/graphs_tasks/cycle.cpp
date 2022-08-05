@@ -18,14 +18,14 @@ int start, finish;
 
 void dfs(int v) {
   used[v] = 1;
-  for (auto to : g[v]) {
-    if (!used[to]) {
-      p[to] = v;
-      dfs(to);
-    } else if (used[to] == 1) {
+  for (auto u : g[v]) {
+    if (!used[u]) {
+      p[u] = v;
+      dfs(u);
+    } else if (used[u] == 1) {
       cycle = true;
       start = v;
-      finish = to;
+      finish = u;
     }
   }
   used[v] = 2;
