@@ -27,23 +27,23 @@ const int MAXN = 100500;
 
 vi g[MAXN], idx[MAXN], bridge;
 bool used[MAXN];
-int timer, tin[MAXN], fup[MAXN];
+int timer, tin[MAXN], low[MAXN];
 
 void dfs(int v, int p = -1) {
   used[v] = true;
   timer++;
   tin[v] = timer;
-  fup[v] = tin[v];
+  low[v] = tin[v];
   for (int i = 0; i < sz(g[v]); i++) {
-    int u = g[v][i];
-    if (!used[u]) {
-      dfs(u, v);
-      if (fup[u] == tin[u]) {
+    int to = g[v][i];
+    if (!used[to]) {
+      dfs(to, v);
+      if (low[to] == tin[to]) {
         bridge.pb(idx[v][i]);
       }
-      fup[v] = min(fup[v], fup[u]);
-    } else if (u != p) {
-      fup[v] = min(fup[v], fup[u]);
+      low[v] = min(low[v], low[to]);
+    } else if (to != p) {
+      low[v] = min(low[v], low[to]);
     }
   }
 }
@@ -57,13 +57,14 @@ int main() {
 
   int n, m;
   cin >> n >> m;
-  for (int i = 1, u, v; i <= m; i++) {
-    cin >> u >> v;
-    g[u].pb(v);
-    g[v].pb(u);
+  for (int i = 1; i <= m; i++) {
+    int from, to;
+    cin >> from >> to;
+    g[from].pb(to);
+    g[to].pb(from);
 
-    idx[u].pb(i);
-    idx[v].pb(i);
+    idx[from].pb(i);
+    idx[to].pb(i);
   }
   for (int i = 1; i <= n; i++) {
     if (!used[i]) {
