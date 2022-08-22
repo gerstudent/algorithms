@@ -4,24 +4,6 @@
 using namespace std;
 
 #define all(x) x.begin(), x.end()
-#define sz(x) (int)(x).size()
-#define pb push_back
-#define mp make_pair
-#define fi first
-#define se second
-
-using ll = long long;
-using ull = unsigned long long;
-using ld = long double;
-
-typedef pair<int, int> pi;
-typedef pair<ll, ll> pl;
-
-typedef vector<pi> vpi;
-typedef vector<int> vi;
-typedef vector<vector<int>> vvi;
-typedef vector<ll> vl;
-typedef vector<bool> vb;
 
 struct Student {
   string name, surname;
